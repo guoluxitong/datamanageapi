@@ -19,7 +19,7 @@ public class DatamanageApplication {
     public static void main(String[] args) {
         SpringApplication.run(DatamanageApplication.class, args);
     }
-
+	//tomcat test
     @Bean
     public WebServerFactoryCustomizer<ConfigurableWebServerFactory> webServerFactoryCustomizer(){
         return factory -> {

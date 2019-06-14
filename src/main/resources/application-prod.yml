@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.5.49:3306/bksrDB?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: dba_user
+    password: Test@163.com
+server:
+  port: 8083

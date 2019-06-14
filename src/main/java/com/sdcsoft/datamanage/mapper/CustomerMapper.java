@@ -35,7 +35,4 @@ public interface CustomerMapper {
     @Delete("delete from Customer where Id=#{id}")
     void deleteCustomerById(Integer id);
 
-
-
-
 }

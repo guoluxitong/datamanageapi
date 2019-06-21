@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8758fa4a-4a17-41c7-a51d-bb19845d8462" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/DatamanageApplication.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/client/TemplateClient.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/config/system/CorsConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/config/system/MybatisConfig.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/CustomerMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/DeviceMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/DeviceTypeMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/EmployeeMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/EmployeeRoleMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/EnterpriseMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/ResourceMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/RoleMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/RoleResourceMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/mapper/TokenDictMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/Customer.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/Device.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/DeviceType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/Employee.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/EmployeeRole.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/Enterprise.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/Resource.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/Role.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/RoleResource.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/TokenDict.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/DeviceService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/EmployeeService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/ResourceService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/RoleService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/impl/DeviceServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/impl/EmployeeServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/impl/ResourceServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/service/impl/RoleServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/utils/DateUtil.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/utils/Result.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/utils/ResultCode.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/utils/ResultGenerator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/CustomerController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/DeviceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/DeviceTypeController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/EmployeeController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/EnterpriseController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/LoginController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/ResourceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/RoleController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/TokenDictController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/web/indexController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/common/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/common/home.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/css/app.fb7ece0188b7985ef8139e1eb3fc7fdf.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/css/app.fb7ece0188b7985ef8139e1eb3fc7fdf.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/fonts/element-icons.6f0a763.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/0.c75cad8b7b576b790ed7.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/0.c75cad8b7b576b790ed7.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/1.3f12d60b740cbaee7363.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/1.3f12d60b740cbaee7363.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/10.f6b5251cc0cdb27a7c83.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/10.f6b5251cc0cdb27a7c83.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/11.b9817bcb4621f0bab34e.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/11.b9817bcb4621f0bab34e.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/12.99bd14f951e4ea5692d1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/12.99bd14f951e4ea5692d1.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/13.d7505340b649859c35b9.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/13.d7505340b649859c35b9.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/2.dd0cc26a6a7ef3d843a6.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/2.dd0cc26a6a7ef3d843a6.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/3.56a1bc8f508e6576df86.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/3.56a1bc8f508e6576df86.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/4.568801c97c0d4c2d1589.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/4.568801c97c0d4c2d1589.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/5.c6edec8fbf951aafc9a8.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/5.c6edec8fbf951aafc9a8.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/6.21ad6f50462065aba0ca.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/6.21ad6f50462065aba0ca.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/7.37a577683b6be16e4bc5.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/7.37a577683b6be16e4bc5.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/8.f453b37c941d67948a34.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/8.f453b37c941d67948a34.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/9.9a3555091d683a608fed.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/9.9a3555091d683a608fed.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/app.cc5a1fde9510a7c5fa11.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/app.cc5a1fde9510a7c5fa11.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/manifest.9ff11c7647821cc09c45.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/manifest.9ff11c7647821cc09c45.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/vendor.ecead875dac0b3bf8309.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/old/static/js/vendor.ecead875dac0b3bf8309.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/common/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/common/home.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/css/app.fb7ece0188b7985ef8139e1eb3fc7fdf.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/css/app.fb7ece0188b7985ef8139e1eb3fc7fdf.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/fonts/element-icons.6f0a763.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/0.c75cad8b7b576b790ed7.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/0.c75cad8b7b576b790ed7.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/1.3f12d60b740cbaee7363.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/1.3f12d60b740cbaee7363.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/10.f6b5251cc0cdb27a7c83.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/10.f6b5251cc0cdb27a7c83.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/11.b9817bcb4621f0bab34e.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/11.b9817bcb4621f0bab34e.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/12.99bd14f951e4ea5692d1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/12.99bd14f951e4ea5692d1.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/13.d7505340b649859c35b9.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/13.d7505340b649859c35b9.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/2.dd0cc26a6a7ef3d843a6.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/2.dd0cc26a6a7ef3d843a6.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/3.56a1bc8f508e6576df86.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/3.56a1bc8f508e6576df86.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/4.61e48b369d13f76027fb.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/4.61e48b369d13f76027fb.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/5.c6edec8fbf951aafc9a8.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/5.c6edec8fbf951aafc9a8.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/6.21ad6f50462065aba0ca.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/6.21ad6f50462065aba0ca.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/7.37a577683b6be16e4bc5.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/7.37a577683b6be16e4bc5.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/8.f453b37c941d67948a34.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/8.f453b37c941d67948a34.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/9.9a3555091d683a608fed.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/9.9a3555091d683a608fed.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/app.cc5a1fde9510a7c5fa11.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/app.cc5a1fde9510a7c5fa11.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/manifest.5b772f4043b31e9cce60.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/manifest.5b772f4043b31e9cce60.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/vendor.ecead875dac0b3bf8309.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/static/js/vendor.ecead875dac0b3bf8309.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sdcsoft/datamanage/DatamanageApplicationTests.java" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="388" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="datamanageapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="datamanageapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datamanageapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="datamanageapi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datamanageapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="datamanageapi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datamanageapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="datamanageapi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datamanageapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="datamanageapi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datamanage" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="E:/数据管理平台/后台/datamanage" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="datamanage1" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="DatamanageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sdcsoft.datamanage.DatamanageApplication" />
+      <module name="datamanage1" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8758fa4a-4a17-41c7-a51d-bb19845d8462" name="Default" comment="" />
+      <created>1561104172126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561104172126</updated>
+      <workItem from="1561104178230" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1099000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4905028" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25375536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvnw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/DatamanageApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sdcsoft/datamanage/model/Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="102" column="8" lean-forward="false" selection-start-line="102" selection-start-column="8" selection-end-line="106" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

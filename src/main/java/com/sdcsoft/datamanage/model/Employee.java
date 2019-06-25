@@ -11,13 +11,13 @@ public class Employee implements Serializable {
     public static final int STATUS_ENABLE=1;
     public static final int STATUS_DISABLE=0;
 
+
+
     private Integer id;
     private Integer orgType,orgId,status;
     private String password,mobile,email,weiXin,qQ,realName,mark,organizationName;
     private Timestamp lastLoginDatetime;
-    private List<Role> roleList;
-    private List<Resource> resourceList;
-    private List<EmployeeRole> employeeRoleList;
+
 
     public List<String> getDeviceNoList() {
         return deviceNoList;
@@ -133,27 +133,5 @@ public class Employee implements Serializable {
         this.lastLoginDatetime = lastLoginDatetime;
     }
 
-    public List<Role> getRoleList() {
-        return roleList;
-    }
 
-    public void setRoleList(List<Role> roleList) {
-        this.roleList = roleList;
-    }
-
-    public List<Resource> getResourceList() {
-        return resourceList;
-    }
-
-    public void setResourceList(List<Resource> resourceList) {
-        this.resourceList = resourceList;
-    }
-
-    public List<EmployeeRole> getEmployeeRoleList() {
-        return employeeRoleList;
-    }
-
-    public void setEmployeeRoleList(List<EmployeeRole> employeeRoleList) {
-        this.employeeRoleList = employeeRoleList;
-    }
 }

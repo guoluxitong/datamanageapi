@@ -26,8 +26,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public Employee findOneByLoginId(Integer id) {
         Employee employee=employeeMapper.findOneByLoginId(id+"");
-        employee.setRoleList(roleMapper.getRoleListByEmployeeId(id));
-        employee.setResourceList(resourceMapper.getResourceListByEmployeeId(id));
+
        employee.setDeviceNoList(deviceMapper.getDeviceNoByEnterpriseId(employee.getOrgId()));
         return employee;
     }

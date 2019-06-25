@@ -3,8 +3,8 @@ package com.sdcsoft.datamanage.model;
 import java.io.Serializable;
 
 public class Customer implements Serializable {
-    private Integer id, enterpriseId,status;
-    private String customerName,customerNo;
+    private Integer id,status;
+    private String customerName;
 
     public Integer getId() {
         return id;
@@ -14,13 +14,7 @@ public class Customer implements Serializable {
         this.id = id;
     }
 
-    public Integer getEnterpriseId() {
-        return enterpriseId;
-    }
 
-    public void setEnterpriseId(Integer enterpriseId) {
-        this.enterpriseId = enterpriseId;
-    }
 
     public Integer getStatus() {
         return status;
@@ -38,11 +32,5 @@ public class Customer implements Serializable {
         this.customerName = customerName;
     }
 
-    public String getCustomerNo() {
-        return customerNo;
-    }
 
-    public void setCustomerNo(String customerNo) {
-        this.customerNo = customerNo;
-    }
 }

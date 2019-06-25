@@ -1,7 +1,8 @@
 spring:
   profiles:
-    active: prod
+    active: dev
 com:
   sdcsoft:
     datamanage:
       onlineurl: http://output.sdcsoft.com.cn
+      dataurl: http://127.0.0.1:8088/

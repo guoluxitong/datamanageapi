@@ -8,7 +8,6 @@ import java.util.List;
 
 @Component
 public interface EmployeeMapper {
-
     @Select("<script>" +
             "select ee.* from Employee ee "+
             "<where>"+
@@ -26,7 +25,7 @@ public interface EmployeeMapper {
             "</script>")
     List<Employee> getEmployeeListByCondition(Employee employee);
 
-    @Select("select em.Id,em.Password,em.status from Employee em where em.mobile=#{account} or em.email=#{account}")
+    @Select("select * from Employee em where em.mobile=#{account} or em.email=#{account}")
     Employee loginByAccount(@Param("account") String account);
 
     @Select("select em.*, " +

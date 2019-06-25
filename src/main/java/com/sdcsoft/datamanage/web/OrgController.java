@@ -3,28 +3,21 @@ package com.sdcsoft.datamanage.web;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.sdcsoft.datamanage.client.TemplateClient;
-import com.sdcsoft.datamanage.mapper.CustomerMapper;
-import com.sdcsoft.datamanage.mapper.TokenDictMapper;
 import com.sdcsoft.datamanage.model.Customer;
-import com.sdcsoft.datamanage.model.TokenDict;
+import com.sdcsoft.datamanage.model.OrgType;
 import com.sdcsoft.datamanage.utils.Result;
 import com.sdcsoft.datamanage.utils.ResultGenerator;
 import feign.Feign;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 @RestController
-@RequestMapping(value = "/customer")
-public class CustomerController {
+@RequestMapping(value = "/org")
+public class OrgController {
 
 
     private static String dataUrlUrl;
@@ -34,14 +27,14 @@ public class CustomerController {
     }
     /**
      * 查询客户列表-分页
-     * @param customer
+     * @param org
      * @param pageNum
      * @param pageSize
      * @return
      */
-    @GetMapping(value = "/customerlistbyconditionandpage")
-    public Result getCustomerListByConditionAndPage(Customer customer, int pageNum, int pageSize) {
-        TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/customer/list"));
+    @GetMapping(value = "/orglist")
+    public Result orglist(OrgType org, int pageNum, int pageSize) {
+        TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/org/list"));
         JSONObject jobj = JSON.parseObject(dataClient.get());
         JSONArray ja = jobj.getJSONArray("data");
         return ResultGenerator.genSuccessResult(ja);
@@ -49,24 +42,24 @@ public class CustomerController {
 
     /**
      * 编辑客户
-     * @param customer
+     * @param org
      * @return
      */
-    @PostMapping("/editcustomer")
-    public Result editCustomer(@RequestBody Customer customer){
-        if(customer.getId()!=null){
-            TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/customer/modify"));
+    @PostMapping("/editorg")
+    public Result editorg(@RequestBody OrgType org){
+        if(org.getId()!=null){
+            TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/org/modify"));
             Map<String,String> map=new HashMap<>();
-            map.put("id",customer.getId().toString());
-            map.put("status",customer.getStatus().toString());
-            map.put("customerName",customer.getCustomerName());
+            map.put("id",org.getId().toString());
+            map.put("orgType",org.getOrgType().toString());
+            map.put("orgTypeName",org.getOrgTypeName());
             JSONObject jobj = JSON.parseObject(dataClient.post(map));
             return ResultGenerator.genSuccessResult(jobj.get("msg")+"");
         }else{
-            TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/customer/create"));
+            TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/org/create"));
             Map<String,String> map=new HashMap<>();
-            map.put("status",customer.getStatus().toString());
-            map.put("customerName",customer.getCustomerName());
+            map.put("orgType",org.getOrgType().toString());
+            map.put("orgTypeName",org.getOrgTypeName());
             JSONObject jobj = JSON.parseObject(dataClient.post(map));
             System.out.println(jobj);
             return ResultGenerator.genSuccessResult(jobj.get("msg")+"");

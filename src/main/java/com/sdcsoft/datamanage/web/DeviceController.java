@@ -10,12 +10,15 @@ import com.google.zxing.client.j2se.MatrixToImageConfig;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import com.sdcsoft.datamanage.client.TemplateClient;
 import com.sdcsoft.datamanage.mapper.DeviceMapper;
 import com.sdcsoft.datamanage.model.Device;
 import com.sdcsoft.datamanage.service.DeviceService;
 import com.sdcsoft.datamanage.utils.Result;
 import com.sdcsoft.datamanage.utils.ResultGenerator;
+import feign.Feign;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
@@ -38,6 +41,11 @@ public class DeviceController {
     @Autowired
     private DeviceMapper deviceMapper;
 
+    private static String dataUrlUrl;
+    @Value("${com.sdcsoft.datamanage.dataurl}")
+    public void setDataUrl(String dataUrlUrl) {
+        this.dataUrlUrl = dataUrlUrl;
+    }
 
     /**
      * 查询设备列表-分页
@@ -49,7 +57,8 @@ public class DeviceController {
     @GetMapping(value = "/devicelistbyconditionandpage")
     public Result getDeviceListByConditionAndPage(Device device, int pageNum, int pageSize) {
         PageHelper.startPage(pageNum, pageSize);
-        return ResultGenerator.genSuccessResult(new PageInfo(deviceService.getDeviceListByCondition(device)));
+
+        return ResultGenerator.genSuccessResult(new PageInfo());
     }
 
 
@@ -127,45 +136,5 @@ public class DeviceController {
         deviceMapper.deleteDeviceById(id);
         return ResultGenerator.genSuccessResult();
     }
-    /*s生成二维码 */
-    @GetMapping("/generateqrcode")
-    public void generateQRCode(Long startSuffix, Long endSuffix, @RequestParam(name = "width",defaultValue = "200",required = false) int width,
-                               @RequestParam(name = "height",defaultValue = "200",required = false) int height, HttpServletRequest request, HttpServletResponse response) throws WriterException, IOException {
-        MatrixToImageConfig DEFAULT_CONFIG = new MatrixToImageConfig();
-        int index = 0;
-        List<Device> list = deviceMapper.getDeviceNoAndSuffixByStartSuffixAndEndSuffix(startSuffix,endSuffix);
-        BufferedImage image2 = new BufferedImage(2440, 265+list.size()/11*265, BufferedImage.TYPE_INT_RGB);
-        //获取图形上下文,graphics想象成一个画笔
-        Graphics2D graphics = (Graphics2D) image2.getGraphics();
-        graphics.fillRect(0, 0, 2440, 265+list.size()/11*265);
-        List<String> suffixList = new ArrayList<>();
-        for (int a = 0; a < list.size(); a++) {
-            int row = a/11;
-            Device device = list.get(a);
-            String content = "http://www.sdcsoft.com.cn/app/gl/gl.apk?id=" + device.getDeviceNo();
-            Map<EncodeHintType, Object> config = new HashMap<>();
-            config.put(EncodeHintType.CHARACTER_SET, "UTF-8");
-            config.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.M);
-            config.put(EncodeHintType.MARGIN, 0);
-            BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, width, height, config);
-            BufferedImage image = MatrixToImageWriter.toBufferedImage(bitMatrix, DEFAULT_CONFIG);
-            //消除线条锯齿
-            graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-            graphics.drawImage(image, 200 * (index-row*11) + 20 * (index-row*11) + 20,  20+row *200+65*row, 200, 200, null);
-            graphics.setColor(Color.BLACK);
-            graphics.drawString(device.getDeviceNo(), 70 + 200 * (index-row*11) + 20 * (index-row*11) + 20, 235+row *200+65*row);
-            graphics.drawString( device.getDeviceNo()+"-"+device.getDeviceSuffix().substring(5),20 + 200 * (index-row*11) + 20 * (index-row*11) + 20, 265+row *200+65*row);
-            index++;
-            suffixList.add(device.getDeviceSuffix());
-        }
-        //释放此图形的上下文并释放它所使用的所有系统资源
-        graphics.dispose();
-        response.setDateHeader("expries", -1);
-        response.setHeader("Cache-Control", "no-cache");
-        response.setHeader("Pragma", "no-cache");
-        OutputStream os = response.getOutputStream();
-        ImageIO.write(image2, "JPEG", os);
-        os.flush();
-        os.close();
-    }
+
 }

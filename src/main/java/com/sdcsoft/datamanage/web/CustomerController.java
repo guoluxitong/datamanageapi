@@ -40,7 +40,7 @@ public class CustomerController {
      * @return
      */
     @GetMapping(value = "/customerlistbyconditionandpage")
-    public Result getCustomerListByConditionAndPage(Customer customer, int pageNum, int pageSize) {
+    public Result getCustomerListByConditionAndPage(Customer customer) {
         TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/customer/list"));
         JSONObject jobj = JSON.parseObject(dataClient.get());
         JSONArray ja = jobj.getJSONArray("data");

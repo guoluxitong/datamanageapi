@@ -31,12 +31,12 @@ public class EnterpriseController {
     /**
      * 查询字典列表-分页
      * @param enterprise
-     * @param pageNum
-     * @param pageSize
+     * @param
+     * @param
      * @return
      */
     @GetMapping(value = "/enterpriselistbyconditionandpage")
-    public Result getEnterpriseListByConditionAndPage(Enterprise enterprise, int pageNum, int pageSize) {
+    public Result getEnterpriseListByConditionAndPage(Enterprise enterprise) {
         TemplateClient dataClient = Feign.builder().target(TemplateClient.class, String.format("%s%s",dataUrlUrl,"/enterprise/list"));
         JSONObject jobj = JSON.parseObject(dataClient.get());
         JSONArray ja = jobj.getJSONArray("data");

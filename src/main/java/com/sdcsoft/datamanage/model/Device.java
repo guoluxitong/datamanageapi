@@ -2,6 +2,7 @@ package com.sdcsoft.datamanage.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sdcsoft.datamanage.utils.DateUtil;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -9,24 +10,27 @@ import java.util.Date;
 
 public class Device implements Serializable {
 
-    public static final int STATUS_SELL = 1;//已售出
-    public static final int STATUS_READY = 0;//未售出
+
+    public static final int STATUS_SELL = 1;
+    public static final int STATUS_READY = 0;
     private Integer id;
     private Integer enterpriseId;
-    private Integer areaId;
-    private Integer power;
-    private Integer media;
-    private Integer manufacturerId;
+    private Integer customerId;
+    private Integer agentId;
+    private Integer endUserId;
     private Integer status;
     private Integer runStatus;
-    private Integer onlineStates;
-    private String deviceNo,deviceType,enterpriseName,devicePrefix,deviceSuffix,customerNo,customerName;
-    private Timestamp importDatetime;//导入时间
-    private Timestamp saleDatetime; //售出时间
+    private Integer power;
+    private Integer media;
+    private String deviceNo;
+    private String devicePrefix;
+    private String deviceSuffix;
+    private String deviceType;
+    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private Date importDatetime;
 
-    public Integer getOnlineStates() { return onlineStates;}
 
-    public void setOnlineStates(Integer onlineStates) {this.onlineStates = onlineStates;}
+
 
     public Integer getId() {
         return id;
@@ -44,36 +48,28 @@ public class Device implements Serializable {
         this.enterpriseId = enterpriseId;
     }
 
-    public Integer getAreaId() {
-        return areaId;
+    public Integer getCustomerId() {
+        return customerId;
     }
 
-    public void setAreaId(Integer areaId) {
-        this.areaId = areaId;
+    public void setCustomerId(Integer customerId) {
+        this.customerId = customerId;
     }
 
-    public Integer getPower() {
-        return power;
+    public Integer getAgentId() {
+        return agentId;
     }
 
-    public void setPower(Integer power) {
-        this.power = power;
+    public void setAgentId(Integer agentId) {
+        this.agentId = agentId;
     }
 
-    public Integer getMedia() {
-        return media;
+    public Integer getEndUserId() {
+        return endUserId;
     }
 
-    public void setMedia(Integer media) {
-        this.media = media;
-    }
-
-    public Integer getManufacturerId() {
-        return manufacturerId;
-    }
-
-    public void setManufacturerId(Integer manufacturerId) {
-        this.manufacturerId = manufacturerId;
+    public void setEndUserId(Integer endUserId) {
+        this.endUserId = endUserId;
     }
 
     public Integer getStatus() {
@@ -92,6 +88,22 @@ public class Device implements Serializable {
         this.runStatus = runStatus;
     }
 
+    public Integer getPower() {
+        return power;
+    }
+
+    public void setPower(Integer power) {
+        this.power = power;
+    }
+
+    public Integer getMedia() {
+        return media;
+    }
+
+    public void setMedia(Integer media) {
+        this.media = media;
+    }
+
     public String getDeviceNo() {
         return deviceNo;
     }
@@ -100,20 +112,12 @@ public class Device implements Serializable {
         this.deviceNo = deviceNo;
     }
 
-    public String getDeviceType() {
-        return deviceType;
+    public String getDevicePrefix() {
+        return devicePrefix;
     }
 
-    public void setDeviceType(String deviceType) {
-        this.deviceType = deviceType;
-    }
-
-    public String getEnterpriseName() {
-        return enterpriseName;
-    }
-
-    public void setEnterpriseName(String enterpriseName) {
-        this.enterpriseName = enterpriseName;
+    public void setDevicePrefix(String devicePrefix) {
+        this.devicePrefix = devicePrefix;
     }
 
     public String getDeviceSuffix() {
@@ -124,43 +128,25 @@ public class Device implements Serializable {
         this.deviceSuffix = deviceSuffix;
     }
 
-    @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm")
-    public Timestamp getImportDatetime() {
+    public String getDeviceType() {
+        return deviceType;
+    }
+
+    public void setDeviceType(String deviceType) {
+        this.deviceType = deviceType;
+    }
+
+
+
+
+
+
+    public Date getImportDatetime() {
         return importDatetime;
     }
-    public void setImportDatetime(Timestamp importDatetime) {
+
+    public void setImportDatetime(Date importDatetime) {
         this.importDatetime = importDatetime;
     }
-    @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm")
-    public Timestamp getSaleDatetime() {
-        return saleDatetime;
-    }
-    public void setSaleDatetime(Timestamp saleDatetime) {
-        this.saleDatetime = saleDatetime;
-    }
 
-
-    public String getCustomerNo() {
-        return customerNo;
-    }
-
-    public void setCustomerNo(String customerNo) {
-        this.customerNo = customerNo;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
-    public String getDevicePrefix() {
-        return devicePrefix;
-    }
-
-    public void setDevicePrefix(String devicePrefix) {
-        this.devicePrefix = devicePrefix;
-    }
 }

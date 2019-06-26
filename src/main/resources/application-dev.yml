@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/bksrdb?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/SdcSoft_Core_DB?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: ROOT
 server:
